@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <link href="slick-theme.css" rel="stylesheet" type="text/css">
+        <link href="slick.css" rel="stylesheet" type="text/css">
+        <title>slick-slideshow</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content-width">
+                <h2>slickのスライドショー</h2>
+                    <div class="img-contents">
+                        <img src="images/car-604019_1920.jpg" alt="car">
+                        <img src="images/sky-2009916_1920.jpg" alt="aozora">
+                        <img src="images/morning-glory-3744967_1920.jpg" alt="asagao">
+                        <img src="images/horse-1201143_1920.jpg" alt="horse">
+                    </div>
+                <p>4秒毎に自動でスライドします</p>
+                <p>左右に矢印を押下でスライドをさせることができます</p>
+            </div>
+            
+        </div>
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="slick.min.js"></script>
+        
+        <script>
+            $('.img-contents').slick({
+                autoplay:true,
+                autoplaySpeed:4000,
+                arrows:true,
+            }
+                );
+        </script>
+        
+    </body>
+    
+</html>
